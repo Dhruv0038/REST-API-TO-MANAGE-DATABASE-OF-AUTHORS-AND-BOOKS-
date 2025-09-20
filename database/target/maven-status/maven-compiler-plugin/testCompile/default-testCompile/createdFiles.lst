@@ -1,0 +1,6 @@
+com\dhruv\database\repositories\BookEntityRepositoryIntegrationTest.class
+com\dhruv\database\controllers\BookControllerIntegrationTest.class
+com\dhruv\database\controllers\AuthorControllerIntegrationTest.class
+com\dhruv\database\repositories\AuthorEntityRepositoryIntegrationTest.class
+com\dhruv\database\BooksApiApplicationTests.class
+com\dhruv\database\TestDataUtil.class

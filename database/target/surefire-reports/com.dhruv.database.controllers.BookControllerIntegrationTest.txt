@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.dhruv.database.controllers.BookControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.876 s <<< FAILURE! -- in com.dhruv.database.controllers.BookControllerIntegrationTest
+com.dhruv.database.controllers.BookControllerIntegrationTest.testThatListBookReturnsBook -- Time elapsed: 0.098 s <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$[0].isbn"
+	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:351)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:148)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:112)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.dhruv.database.controllers.BookControllerIntegrationTest.testThatListBookReturnsBook(BookControllerIntegrationTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Filter: [0]['isbn'] can only be applied to arrays. Current context is: {content=[{"isbn":"978-1-2345-6789-0","title":"The Shadow in the Attic","author":null}], pageable={pageNumber=0, pageSize=20, sort={empty=true, unsorted=true, sorted=false}, offset=0, unpaged=false, paged=true}, totalElements=1, totalPages=1, last=true, size=20, number=0, numberOfElements=1, sort={empty=true, unsorted=true, sorted=false}, first=true, empty=false}
+
